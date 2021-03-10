@@ -5,11 +5,15 @@ IF STATMENT:
 Logikos sablonai
 if() {}
 if() {} else {}
+if() {} else if {} else if {}...
 
 palyginimo operatoriai:
 - visi: >, <, =, >=, <=, ==, !=, ===, !==, !
 - naudotini: >, <, >=, <=, ===, !==, !
 - nenaudotini: ==, !=   (nes nera tikrinamas reiksmiu tipas)
+
+Loginiai operatoriai:
+
 */
 
 const a = 7;
@@ -67,3 +71,75 @@ if (userLoggedIn) {
     console.log('Log in')
 }
 
+console.log('--------------------')
+
+
+const pomidoras = 'pomidoras';
+const pomidoroIlgis = pomidoras.length;
+
+console.log(pomidoroIlgis);
+
+console.log('--------------------')
+
+const akys = 'Melynos';
+
+if (akys === 'Melynos') {
+    console.log('Oj kokie fainulkos!!!');
+} else if (akys ==='Zalios') {
+    console.log('Sexy😍😍😍');
+} else if (akys === 'Rudos') {
+    console.log('Melagis? 🤔');
+} else if (akys === 'Pilkos'){
+console.log('Niekuo neiprastas..');
+} else if (akys === 'Raudonos') {
+console.log('Programeriai');
+} else {
+    console.log('Ar tu turi akis?');
+}
+
+if (akys === 'Melynos'){
+    console.log('Oj kokie fainulkos!!!');
+} else {
+    if (akys === 'Zalios') {
+        console.log('Sexy😍😍😍');
+    } else {
+        if (akys === 'Rudos') {
+            console.log('Melagis🤔');
+        } else{
+            if (akys === 'Pilkos') {
+                console.log('Niekuo neipatingas');
+            } else{
+                if (akys === 'Raudonos') {
+                    console.log('Programeris');
+                } else{
+                    console.log('Ar tu turi akis?');
+                }
+            }
+        }
+    }
+}
+
+console.log('----------------');
+
+if (akys === 'Melynos') {
+    console.log('Oj kokie fainulkos!!!');
+}
+if (akys === 'Zalios') {
+    console.log('Sexy😍😍😍');
+}
+if (akys === 'Rudos') {
+    console.log('Melagis');
+}
+if (akys === 'Pilkos') {
+    console.log('Niekuo neiprastos');
+}
+if (akys === 'Raudonos') {
+    console.log('Programeris');
+}
+if (akys !== 'Melynos' &&
+    akys !== 'Zalios' &&
+    akys !== 'Rudos' &&
+    akys !== 'Pilkos'&&
+    akys !== 'Raudonos') {
+    console.log('Ar  tu turi akis?');
+}
