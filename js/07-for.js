@@ -19,7 +19,7 @@ zodis += rytas[rytasIndex++];
 console.log(zodis);
 
 
-for (let i = 1; i <= 5; i++) {
+for (let i = 0; i <= 5; i++) {
     console.log(i);    
 }
 
