@@ -25,7 +25,7 @@ console.log('----------------');
 
 
 function labas(vardas, amzius, vietovardis) {
-    console.log(`labas, as esu ${vardas} ir man ${amzius} metai ir gyvenu ${vietovardis}.`);
+    console.log(`labas, as esu ${vardas}, man ${amzius} metai ir gyvenu ${vietovardis}.`);
 }
 labas('Petras', 88, 'vilniuje');
 labas('Maryte', 77, 'Kaune');
