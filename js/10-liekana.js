@@ -26,12 +26,12 @@ console.log(ats);
 0 - 20     / 5
 
 5, 10, 15, 20
-i+=daliklis
+i += daliklis  (vietoj i++)
 
 
-11 - 20     / 5             (iki-nuo) / daliklis + 1
+11 - 20    / 5        (iki-nuo) / daliklis + 1
 
 15, 20
-i += daliklis
+i += daliklis   (vietoj i++)
 
 */

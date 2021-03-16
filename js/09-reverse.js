@@ -1,18 +1,26 @@
 // 2 //
 
-const text = 'Žiema';
+const text = 'abcdef';
 let reverse ='';
 
-for (let i = 0; i <= text.length; i++) {
-    reverse +=  text[i]  
+for (let i = 0; i < text.length; i++) {
+    reverse = text[i] + reverse
 }
+console.log(text, '->' , reverse);
 
-// for (let i = text.length; i >= 0; i--) {
-//     const sezonas = text[i - 1];    
+
+// GALIMI VARIANTAI //
+
+// for (let i = 0; i < text.length; i++) {
+// reverse += text[text.length - 1 - i]  
+// }
+
+// for (let i = text.length; i >= 0; i--) {    
+//      reverse += text[i - 1];    
 // }
 
 // for (let i = tekstas.length-1; i >= 0; i--) {
-//       const sezonas = tekstas[i];
+//      reverse += text[i];    
 // }  
-console.log(text, '->' , reverse);
-console.log('---------------------');
+
+
