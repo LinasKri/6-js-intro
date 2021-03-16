@@ -51,7 +51,7 @@ console.log(sum, '/', marks.length, '=', average);
 
 console.log('---------------------');
 
-const sakinys = "Labas rytas🎅";
+const sakinys = "Labas rytas";
 
 for (let i = 0; i < sakinys.length; i++) {
     const simbolis = sakinys[i];
