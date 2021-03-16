@@ -1,15 +1,13 @@
-const a = 4
-const b = 5
 
-
+// viska statom i parametrus ir leiskim logikai atlikti likusi darba//
 
 function daugyba(a, b) {
     const rez = a * b;
     return rez;
 }
 
-console.log(daugyba(a,b));
-console.log(daugyba(44,5));
+console.log(daugyba(4, 5));
+console.log(daugyba(44, 5));
 console.log(daugyba(-44, -55));
 console.log(daugyba(-44, 55));
 console.log(daugyba(-44, 0));
