@@ -14,3 +14,6 @@ console.log(daugyba(-44, 0));
 console.log(daugyba(0, 0));
 console.log(daugyba(0, 54850));
 console.log(daugyba(3.14, 2));
+
+
+console.log(daugyba(3.14, 2));

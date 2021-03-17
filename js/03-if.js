@@ -143,3 +143,10 @@ if (akys !== 'Melynos' &&
     akys !== 'Raudonos') {
     console.log('Ar  tu turi akis?');
 }
+if (akys !== 'Melynos' ||
+    akys !== 'Zalios' ||
+    akys !== 'Rudos' ||
+    akys !== 'Pilkos'||
+    akys !== 'Raudonos') {
+    console.log('Ar  tu turi akis?');
+}

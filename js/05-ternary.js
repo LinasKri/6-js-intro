@@ -2,7 +2,7 @@
 
 TERNARY OPERATOR: ? (KLAUSTUKAS)
 
-palyginimas ? ka daryti jei tenkina logika : kadaryti jei logikos netenkina
+palyginimas ? ka daryti jei tenkina logika : ka daryti jei logikos netenkina
 
 palyginimas ? true : false
 
