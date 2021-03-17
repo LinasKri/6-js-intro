@@ -1,5 +1,5 @@
 function repeatStr (n, s) {
-    return s.repeatStr(n)
+    return s.repeat(n);
 
 }
 
