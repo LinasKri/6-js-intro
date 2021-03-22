@@ -51,12 +51,12 @@ function bigNum(list) {
 // console.log(bigNum({}));
 // console.log(bigNum([]));
 
-console.log(bigNum([1]), '->', 1);
-console.log(bigNum([1, 2, 3]), '->', 3);
+console.log(bigNum([1]));
+console.log(bigNum([1, 2, 3]), '->', 2);
 console.log(bigNum([-5, 78, 14, 0, 18]), '->', 78);
-console.log(bigNum([69, 69, 69, 69, 66]), '->', 69);
-console.log(bigNum([-1, -2, -3, -4, -5, -6, -7, -8]), '->', -1);
-console.log(bigNum([-11, -2, -35, -4, -5, -6, -7, -8]), '->', -2);
+console.log(bigNum([69, 69, 69, 69, 66]), '->', 66);
+console.log(bigNum([-1, -2, -3, -4, -5, -6, -7, -8]), '->', -2);
+console.log(bigNum([-11, -2, -35, -4, -5, -6, -7, -8]), '->', -4);
 
 console.log(bigNum([1, 8, 3, 5, Infinity]), '->', 8);
 console.log(bigNum([1, 8, Infinity, 3, 5]), '->', 8);
