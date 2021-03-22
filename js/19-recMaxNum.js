@@ -1,25 +1,31 @@
 /*
 Rasti didziausia skaiciu bet kokio sudetingumo array'juje.
-
-Salygos:
-- visi array elementai yra : arba skaicius, arba array;
+Salygos: 
+- visi array elementai yra: arba skaicius, arba array;
 - visi skaiciai yra normalus
 */
+
 function recMaxNum(list) {
     let big = -Infinity;
 
-
-    for (let i = 0; i < list.length; i++){
+    for (let i = 0; i < list.length; i++) {
         const num = list[i];
 
-        
-
-        if (num > big) {
-            big = num;
+        if (Array.isArray(num)) {
+            // kai teviniame sarase randa array
+            const bigChild = recMaxNum(num);
+            if (bigChild > big) {
+                big = bigChild;
+            }
+        } else {
+            // kai teviniame sarase randa skaiciu
+            if (num > big) {
+                big = num;
+            }
         }
     }
 
-    return 0;
+    return big;
 }
 
 const data = [
@@ -27,10 +33,23 @@ const data = [
     -5,
     [
         -4,
+        [
+            7,
+            [
+                200,
+                500,
+                300
+            ],
+            11
+        ],
         80
     ],
     78,
-    8];
+    8,
+    [
+        99
+    ]
+];
 
-const biggest = recMaxNum(data)
+const biggest = recMaxNum(data);
 console.log(biggest);
