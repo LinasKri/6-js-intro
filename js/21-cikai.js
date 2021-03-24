@@ -19,7 +19,8 @@ JS galimi ciklai ir "cikliskos" funkcijos/metodai:
 
 const list = [ 1, -5, 78, 2, 11, -14, 0, -3];
 
-// FOR
+///// FOR /////
+
 //break: nutraukia ciklo darba
 //continue: eiti i sekancia ciklo iteracija, jei tokia yra
 
@@ -33,7 +34,10 @@ for (let i = 0; i < list.length; i++) {
 }
 console.clear()
 
-// FOR-IN
+///// FOR-IN /////
+
+//break: nutraukia ciklo darba
+//continue: eiti i sekancia ciklo iteracija, jei tokia yra
 
 for (const i in list){
     const item = list[i];
@@ -45,7 +49,7 @@ for (const i in list){
 
 console.clear()
 
-// FOR-OF
+///// FOR-OF /////
 
 for (const item of list) {
     if (item > 0 ){
@@ -57,7 +61,10 @@ for (const item of list) {
 console.clear()
 
 
-// WHILE  (tol kol)
+///// WHILE ///// (tol kol)
+
+//break: nutraukia ciklo darba
+//continue: eiti i sekancia ciklo iteracija, jei tokia yra
 
 let randomNumber = 0; 
 let randomNumberCount = 0   
@@ -229,3 +236,28 @@ const dictionary2 = ['Labas', 'rytas', 'Lietuva', 'sakau', 'tau'];
 
 const short = dictionary2.reduce((total, word) => total + word[0], '');
 console.log(short);
+
+
+/**********************************************************/
+console.clear()
+
+
+///// SORT /////
+
+const sortAbc = [ 'a', 'c', 'fabrikas', 'fancy', 'baklazanas', 'Bermudai', 'd', 'Antanas'];
+const sortedAbc = sortAbc.sort();
+console.log(sortedAbc);
+
+
+const sortList = [ 1, -5, 78, 2, 11, -14, 0, -3];
+// console.log(sortList.sort());
+
+// const sorted  = sortList.sort((a, b) => b - a);       // a < b ---> +1
+const sortedNumber  = sortList.sort((a, b) => a > b ? -1 : 1 );       
+
+console.log(sortList);
+console.log(sortedNumber);
+
+
+/**********************************************************/
+console.clear();
