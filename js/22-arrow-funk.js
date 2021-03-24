@@ -1,3 +1,6 @@
+
+/// IPRASTA FUNKCIJA ///
+
 function suma(a, b) {
     return a + b;
 }
@@ -10,7 +13,7 @@ console.log(atsSuma);
 //    return a - b;
 // }
 
-// Bevardes funkcijos priskirimas kintamajam
+/// Bevardes funkcijos priskirimas kintamajam ///
 const atimtis = function (a, b) {
     return a - b;
 }
